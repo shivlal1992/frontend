@@ -1,0 +1,28 @@
+td{
+    height: 100px;
+    width: 100px;
+}
+
+.vertical{
+    border-left:10px blue solid;
+    border-right: 10px blue solid;
+}
+.horizontal{
+    border-top:10px blue solid;
+    border-bottom: 10px blue solid;
+}
+
+table{
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+td:hover{
+    background:yellow;
+    border: 5px solid red;
+
+}

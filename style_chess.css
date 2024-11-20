@@ -1,0 +1,19 @@
+h1{
+    text-align:center;
+}
+td{
+    width:60px;
+    height:60px;
+}
+
+.white{
+    background: white;
+}
+
+.black{
+    background: black;
+}
+
+table{
+    margin: auto;
+}

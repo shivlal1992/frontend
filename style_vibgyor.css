@@ -1,0 +1,36 @@
+#one{
+    background: red;
+}
+#two{
+    background:violet;
+}
+#three{
+    background: blue;
+}
+#four{
+    background: green;
+}
+#five{
+    background: orange;
+}
+#six{
+    background: indigo;
+}
+#seven{
+    background: red;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    height: 300px;
+    width: 150px;
+    border: 6px,solid,white;
+}
