@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name</title>
+</head>
+<body>
+    <h1>Name and Color Changer Application</h1>
+    <script>
+        function getRandomName() {
+            const names = ['Sunny', 'Mallika', 'Katrina', 'Kareena', 'Deepika', 'Priyanka'];
+            const index = Math.floor(Math.random() * names.length);
+            return names[index];
+        }
+
+        const myh1 = document.querySelector("h1");
+
+        myh1.addEventListener('mouseover', function () {
+            const name = getRandomName();
+            let color;
+
+            if (name === 'Sunny') {
+                color = 'Pink';
+            } else if (name === 'Mallika') {
+                color = 'Orange';
+            } else if (name === 'Katrina') {
+                color = 'Blue';
+            } else if (name === 'Kareena') {
+                color = 'Cyan';
+            } else if (name === 'Deepika') {
+                color = 'Green';
+            } else {
+                color = 'Yellow';
+            }
+
+            // Update the text and color
+            myh1.textContent = name;
+            myh1.style.color = color;
+        });
+    </script>
+</body>
+</html>

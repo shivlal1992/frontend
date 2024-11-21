@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookManagement</title>
+    </head>
+    <body>
+        <script>
+        let books = [];
+        let input = prompt("Which operation you want to perform [add|delete|list|exit]");
+
+        while (input !== 'exit') {
+            if (input === 'add') {
+                addBook();
+            } else if (input === 'list') {
+                listBook();
+            } else if (input === 'delete') {
+                deleteBook();
+            } else {
+                console.log('Enter a valid option');
+            }
+            input = prompt("Which operation you want to perform [add|delete|list|exit]");
+        }
+
+        function addBook() {
+            const newBook = prompt("Enter the book to add");
+            books.push(newBook);
+            console.log("Book added successfully!");
+            prompt("Book added successfully!"+newBook)
+        }
+
+        function listBook() {
+            console.log("List of Available Books:");
+            books.forEach(book => console.log(book));
+            for(book of books){
+                console.log(book)
+                prompt("listed Book is"+book)
+            }
+        }
+
+        function deleteBook() {
+            const name = prompt("Enter the name of the book to delete");
+            const index = books.indexOf(name);
+            if (index === -1) {
+                console.log("The specified book is not available.");
+                prompt("The specified book is not available: "+name)
+            } else {
+                books.splice(index, 1);
+                console.log("Book deleted successfully!");
+                prompt("Book deleted successfully!::"+name)
+            }
+        }
+        </script>
+    </body>
+</html>
